@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25c8fb73f5b0be8c31abfcc9fea92233",
-    "content-hash": "5e16cb7781829836a704bd8767830833",
+    "hash": "ffceb6405d9ad28a0a1ff97dc4a0ebe5",
+    "content-hash": "afd50ccdcb4a276253729f90b2b17f14",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -37,6 +37,114 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14 19:40:03"
+        },
+        {
+            "name": "facebook/graph-sdk",
+            "version": "5.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/php-graph-sdk.git",
+                "reference": "5d0c4865e80e231d48a4571841bd018828fe58e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/5d0c4865e80e231d48a4571841bd018828fe58e1",
+                "reference": "5d0c4865e80e231d48a4571841bd018828fe58e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4|^7.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "~5.0",
+                "mockery/mockery": "~0.8",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client",
+                "paragonie/random_compat": "Provides a better CSPRNG option in PHP 5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Facebook\\": "src/Facebook/"
+                },
+                "files": [
+                    "src/Facebook/polyfills.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Facebook Platform"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
+                }
+            ],
+            "description": "Facebook SDK for PHP",
+            "homepage": "https://github.com/facebook/php-graph-sdk",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "time": "2017-01-19 15:42:20"
+        },
+        {
+            "name": "juliangut/slim-controller",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/juliangut/slim-controller.git",
+                "reference": "378609d1eb03bbccce41e736c88dd75de9ed4d07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/juliangut/slim-controller/zipball/378609d1eb03bbccce41e736c88dd75de9ed4d07",
+                "reference": "378609d1eb03bbccce41e736c88dd75de9ed4d07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "slim/slim": "^3.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "~2.2",
+                "phpunit/phpunit": "~4.5",
+                "sebastian/phpcpd": "~2.0",
+                "squizlabs/php_codesniffer": "~2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jgut\\Slim\\Controller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Julián Gutiérrez",
+                    "email": "juliangut@gmail.com",
+                    "homepage": "http://juliangut.com"
+                }
+            ],
+            "description": "Slim Framework controller creator",
+            "homepage": "http://github.com/juliangut/slim-controller",
+            "keywords": [
+                "controller",
+                "framework",
+                "slim"
+            ],
+            "time": "2016-09-04 17:12:59"
         },
         {
             "name": "monolog/monolog",
