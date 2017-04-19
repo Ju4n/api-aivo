@@ -124,11 +124,6 @@ class FacebookService
      */
     private function setAccessToken()
     {
-        // if access token is not present in session get again
-        if (!isset($_SESSION['access_token'])) {
-            $_SESSION['access_token'] = $this->facebook->getApp()->getAccessToken();
-        }
-
-        $this->facebook->setDefaultAccessToken($_SESSION['access_token']);
+        $this->facebook->setDefaultAccessToken($this->facebook->getApp()->getAccessToken());
     }
 }
